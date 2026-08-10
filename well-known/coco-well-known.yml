@@ -1,0 +1,41 @@
+generated: '2026-08-09'
+method: probed
+source: live GET of the /.well-known/ discovery surface on every Coco host
+note: >-
+  No /.well-known/ document was found on any Coco host. Every path below returned a
+  real HTTP 404 with a "Not found" body (the site is Framer-hosted and serves genuine
+  404s, so these are not soft-404 false negatives). Recorded as evidence; no
+  WellKnown/SecurityTxt/APICatalog pointer is wired into apis.yml because nothing
+  was found.
+found: 0
+hosts:
+- host: https://www.cocodelivery.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+- host: https://api.cyanbot.com
+  note: >-
+    Base URL hard-coded in the Coco order-tracker bundle
+    (track.cocodelivery.com/static/js/main.cf79883c.chunk.js). The hostname no
+    longer resolves — NXDOMAIN against the local resolver, 8.8.8.8 and 1.1.1.1 —
+    so no /.well-known/ probe could be completed against it.
+  documents: []
+  dns: NXDOMAIN

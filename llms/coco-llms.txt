@@ -1,0 +1,52 @@
+# Coco Robotics
+
+> Coco Robotics is a Santa Monica, California urban robotics company operating a fleet of
+> zero-emission, remotely-supervised sidewalk delivery robots ("Cocobots") for last-mile food,
+> grocery and retail delivery in Los Angeles, Chicago, Miami, Jersey City and Finland.
+
+## API surface
+
+Coco Robotics publishes **no public API**. As of 2026-08-09 there is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK, no webhook catalog, no MCP server and no
+A2A agent card on any Coco host. Merchants do not integrate with Coco directly — Coco is consumed
+as a delivery service provider through third-party ordering platforms.
+
+- Ordering platforms that dispatch Coco: Uber Eats, DoorDash, Wolt, Olo Dispatch
+- Merchant onboarding is a sales conversation, not a developer signup: https://www.cocodelivery.com/contact-delivery
+
+## Company
+
+- [Home](https://www.cocodelivery.com/): Company site (marketing only)
+- [About](https://www.cocodelivery.com/about): Company, leadership and merchant testimonials
+- [Delivery](https://www.cocodelivery.com/delivery): The merchant-facing delivery service
+- [Advertising](https://www.cocodelivery.com/advertising): Robot-surface out-of-home advertising
+- [Coco 2](https://www.cocodelivery.com/coco2): Current-generation autonomous robot
+- [Blog](https://www.cocodelivery.com/blog): Company news and engineering posts
+- [Press](https://www.cocodelivery.com/press): Press resources
+- [Brand](https://www.cocodelivery.com/brand): Logo, color, typography and imagery guidelines
+- [Careers](https://jobs.ashbyhq.com/cocodelivery): Open roles
+
+## Legal
+
+- [Merchant Terms of Service](https://www.cocodelivery.com/merchant-terms-of-service)
+- [Customer Terms and Conditions](https://www.cocodelivery.com/customer-terms-and-conditions)
+- [Privacy Policy](https://www.cocodelivery.com/privacy)
+
+## Code
+
+- [GitHub organization](https://github.com/cocorobotics): 19 public repositories, almost all forks
+  of ROS and infrastructure tooling (robot_localization, rosbridge_suite, cv_camera, grpc-web,
+  traefik-forward-auth). No API specifications are published there.
+- [coco_model](https://github.com/cocorobotics/coco_model): URDF + STL model of the Coco One robot —
+  the only first-party machine-readable artifact Coco publishes.
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/coco/refs/heads/main/apis.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/coco/refs/heads/main/security/coco-domain-security.yml)
+- [.well-known probe record](https://raw.githubusercontent.com/api-evangelist/coco/refs/heads/main/well-known/coco-well-known.yml)
+
+---
+generated: 2026-08-09
+method: generated
+source: apis.yml + www.cocodelivery.com + github.com/cocorobotics
