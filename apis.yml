@@ -8,6 +8,17 @@ description: 'Coco Robotics is a Santa Monica, California urban robotics company
   documentation, SDKs or webhooks of its own. Its public software surface is limited
   to a marketing site, a customer order-tracking web app, and a GitHub organization
   of forked ROS and infrastructure tooling.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://framerusercontent.com/assets/7ibf2PeV3erFTPA5Cn1q9XrTE.jpg
 url: https://raw.githubusercontent.com/api-evangelist/coco/refs/heads/main/apis.yml
 x-type: company
